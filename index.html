@@ -1,92 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Incantation Labs – Theme Switcher with Link</title>
-    <link rel="stylesheet" href="fonts_styles_combined.css">
-    <style>
+  <meta charset="UTF-8" />
+  <title>Incantation Labs – Theme Switcher with Link</title>
+  <link rel="stylesheet" href="fonts_styles_combined.css" />
+  <style>
     .pranamatrix-dark {
-        display: block;
+      display: block;
     }
-
     .pranamatrix-light {
-        display: none;
+      display: none;
     }
-
-    body[data-theme='dark'] .pranamatrix-dark {
-        display: none;
+    body[data-theme="dark"] .pranamatrix-dark {
+      display: none;
     }
-
-    body[data-theme='dark'] .pranamatrix-light {
-        display: block;
+    body[data-theme="dark"] .pranamatrix-light {
+      display: block;
     }
-
     @media (prefers-color-scheme: dark) {
-        body:not([data-theme]) .pranamatrix-dark {
-            display: none;
-        }
-        body:not([data-theme]) .pranamatrix-light {
-            display: block;
-        }
+      body:not([data-theme]) .pranamatrix-dark {
+        display: none;
+      }
+      body:not([data-theme]) .pranamatrix-light {
+        display: block;
+      }
     }
-    </style>
+  </style>
 </head>
+
 <body>
-    <div class="header">
-        <h1>Incantation Labs</h1>
-        <p>Hocus Pocus.. Whats the current Focus?!</p>
-    </div>
-    <div class="cta-buttons">
-        <a href="https://www.linkedin.com/in/sri-divya-krovvidi/" target="_blank">Follow Sri Krovvidi</a>
-        <a href="https://www.linkedin.com/in/aswanikumardhara/" target="_blank">Follow Aswani Dhara</a>
-    </div>
-    <div class="social-proof">
-        Stats : 🤍 To be updated here
+  <div class="header">
+    <h1>Incantation Labs</h1>
+    <p>Hocus Pocus.. What's the current Focus?!</p>
+  </div>
+
+  <div class="cta-buttons">
+    <a href="https://www.linkedin.com/in/sri-divya-krovvidi/" target="_blank">Follow Sri Krovvidi</a>
+    <a href="https://www.linkedin.com/in/aswanikumardhara/" target="_blank">Follow Aswani Dhara</a>
+  </div>
+
+  <div class="social-proof">
+    Stats : 🤍 To be updated here
+  </div>
+
+  <button onclick="toggleTheme()" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
+    Toggle Theme
+  </button>
+
+  <div class="apps">
+    <a href="https://sattvicly.com" target="_blank" style="text-decoration: none;">
+      <div class="app-card">
+        <img src="sattvicly1.png" alt="Sattvicly App" />
+        <div class="app-title">Sattvicly</div>
+        <div class="app-stage">Stage: Development 🧑‍🍳</div>
+      </div>
+    </a>
+
+    <div class="app-card">
+      <img src="PranaMatrix_dark.PNG" alt="PranaMatrix Dark" class="pranamatrix-dark" />
+      <img src="PranaMatrix_light.PNG" alt="PranaMatrix Light" class="pranamatrix-light" />
+      <div class="app-title">PranaMatrix</div>
+      <div class="app-stage">Stage: MVP/Product Ideation 🔍</div>
     </div>
 
-    <button onclick="toggleTheme()" style="position: fixed; top: 20px; right: 20px; z-index: 1000;">
-      Toggle Theme
-    </button>
+    <a href="https://sridivyakrovvidi.github.io/FocusFlow/" target="_blank" style="text-decoration: none;">
+      <div class="app-card">
+        <img src="FocusFlow.png" alt="FocusFlow App" />
+        <div class="app-title">FocusFlow</div>
+        <div class="app-stage">Stage: MVP Launch 🚀</div>
+      </div>
+    </a>
 
-    <div class="apps">
-        <a href="https://sattvicly.com" target="_blank" style="text-decoration: none;">
-          <div class="app-card">
-              <img src="sattvicly1.png" alt="Sattvicly App">
-              <div class="app-title">Sattvicly</div>
-              <div class="app-stage">Stage: Development 🧑‍🍳</div>
-          </div>
-        </a>
-        <div class="app-card">
-            <img src="PranaMatrix_dark.PNG" alt="PranaMatrix Dark" class="pranamatrix-dark">
-            <img src="PranaMatrix_light.PNG" alt="PranaMatrix Light" class="pranamatrix-light">
-            <div class="app-title">PranaMatrix</div>
-            <div class="app-stage">Stage: Finalizing MVP 🔍</div>
-        </div>
-        <div class="app-card">
-            <img src="FocusFlow.png" alt="FocusFlow App">
-            <div class="app-title">FocusFlow</div>
-            <div class="app-stage">Stage: Product Design 🚀</div>
-        </div>
-        <div class="app-card">
-            <img src="Future_App_Idea.png" alt="Future App Idea">
-            <div class="app-title">Future App Idea</div>
-            <div class="app-stage">Stage: Brewing a few 💡</div>
-        </div>
+    <div class="app-card">
+      <img src="Future_App_Idea.png" alt="Future App Idea" />
+      <div class="app-title">Future App Idea</div>
+      <div class="app-stage">Stage: Brewing a few 💡</div>
     </div>
+  </div>
 
-    <script>
+  <script>
     function toggleTheme() {
       const current = document.body.getAttribute("data-theme");
       const next = current === "dark" ? "light" : "dark";
       document.body.setAttribute("data-theme", next);
       localStorage.setItem("theme", next);
     }
-    (function() {
+    (function () {
       const saved = localStorage.getItem("theme");
       if (saved) {
         document.body.setAttribute("data-theme", saved);
       }
     })();
-    </script>
+  </script>
 </body>
 </html>
