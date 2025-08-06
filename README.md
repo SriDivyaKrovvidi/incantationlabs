@@ -52,3 +52,5 @@ A personal exploration project that blends **Principles of Chakra** , and AI wit
 
 🧭 _Currently exploring how to build meaningful, tech-powered products in health, focus, and regenerative living._  
 Let’s build something that matters.
+
+#ai-project #openai #ayurveda #sattvic-food #wellness-tech #machinelearning #focus-app #mindful-productivity #chakra-mapping #fastapi #sqlite #docker #backend-development #product-manager #womenintech #spiritual-tech #opensource #python
