@@ -5,10 +5,10 @@ With over a decade of experience in data platforms, backend engineering, and pro
 
 ## 🤝 Collaborator Spotlight
 
-### Mr. Visionary  
+### Mr. Venkata Aswani Kumar Dhara 
 A Data Engineer on a mission to break into **AI and ML**, with a sixth sense for scalable backend systems and clean architecture.  
 Helps build smart tech for wellness, productivity, and beyond.  
-Follow his journey here 👉 [**Venkata Aswani Kumar Dhara**](https://github.com/vkdhara55)
+Follow his journey here 👉 [**Venkata Dhara**](https://github.com/vkdhara55)
 
 ---
 
