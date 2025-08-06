@@ -44,7 +44,8 @@ A personal exploration project that blends **Principles of Chakra** , and AI wit
 
 ## 📫 Let’s Connect
 
-- 💼 [LinkedIn](https://www.linkedin.com/in/sri-divya-krovvidi/)
+- 💼 [LinkedIn_SriDivya](https://www.linkedin.com/in/sri-divya-krovvidi/)
+- 💼 [LinkedIn_VenkataDhara](https://www.linkedin.com/in/aswanikumardhara/)
 - 🌐 [Sattvicly](https://sattvicly.com) – coming soon!
 
 ---
